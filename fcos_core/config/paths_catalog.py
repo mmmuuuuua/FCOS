@@ -5,7 +5,7 @@ import os
 
 
 class DatasetCatalog(object):
-    DATA_DIR = "datasets"
+    DATA_DIR = "C:\zhulei\data\instance_segmentation"
     DATASETS = {
         "coco_2017_train": {
             "img_dir": "coco/train2017",
@@ -107,6 +107,14 @@ class DatasetCatalog(object):
         "cityscapes_fine_instanceonly_seg_test_cocostyle": {
             "img_dir": "cityscapes/images",
             "ann_file": "cityscapes/annotations/instancesonly_filtered_gtFine_test.json"
+        },
+        "rock_seg_train_cocostyle": {
+            "img_dir": "rock/shapes/train/shapes_train2017",
+            "ann_file": "rock/shapes/train/instances_leaf_train2017.json"
+        },
+        "rock_seg_test_cocostyle": {
+            "img_dir": "rock/shapes/train/shapes_test2017",
+            "ann_file": "rock/shapes/train/instances_leaf_test2017.json"
         }
     }
 
